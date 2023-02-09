@@ -1,6 +1,5 @@
 import React from "react"
-import { Anuncios1 } from "../components/Comp home/anuncios1"
-import { Anuncios2 } from "../components/Comp home/anuncios2"
+import { GoogleAd } from "../components/Comp home/anuncios1"
 import { Credits } from "../components/Comp home/creditos"
 import { NavBar } from "../components/Comp home/navbar"
 import { Carrosel } from "../components/Comp home/populares"
@@ -11,9 +10,15 @@ export const Home = () => {
     <div>
       <NavBar />
       <Carrosel />
-      <Anuncios1 />
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "15px"
+      }}>
+        <GoogleAd slot="1085787706" googleAdId="ca-pub-5729807167062648" />
+      </div>
       <Estados />
-      <Anuncios2/>
       <Credits />
     </div>
   )

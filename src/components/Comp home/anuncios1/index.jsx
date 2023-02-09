@@ -1,7 +1,44 @@
-import React from "react"
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-export const Anuncios1 = () => {
-  return (
-    <div>anuncio 1</div>
-  )
+export class GoogleAd extends Component {
+  googleInit = null
+
+  componentDidMount() {
+    const { timeout } = this.props
+    this.googleInit = setTimeout(() => {
+      if (typeof window !== 'undefined')
+        (window.adsbygoogle = window.adsbygoogle || []).push({})
+    }, timeout)
+  }
+
+  componentWillUnmount() {
+    if (this.googleInit) clearTimeout(this.googleInit)
+  }
+
+  render() {
+    const { classNames, slot, googleAdId, style, format } = this.props
+    return (
+      <div>
+        <ins className='adsbygoogle'
+          style={style || { display: 'block', textAlign: "center" }}
+          data-ad-client={googleAdId}
+          data-ad-slot={slot}
+          data-ad-format={format || "auto"}
+          data-adtest="on"
+          data-full-width-responsive="true" />
+      </div>
+    )
+  }
+}
+
+GoogleAd.propTypes = {
+  classNames: PropTypes.string,
+  slot: PropTypes.string,
+  timeout: PropTypes.number,
+  googleAdId: PropTypes.string,
+}
+GoogleAd.defaultProps = {
+  classNames: '',
+  timeout: 200,
 }
