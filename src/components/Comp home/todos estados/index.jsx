@@ -99,8 +99,8 @@ export const Estados = () => {
     }}>
       <Row style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "10px" }}>
         <h1 style={{ textAlign: "center", color: "green" }}>NORTE<hr style={{marginBottom: "-10px"}}/></h1>
-        <Row xs={2} md={4} className="g-4" style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <Col>
+        <Row xs={2} md={4} className="g-4" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalAc(true) }}
               src={imgAC}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -108,7 +108,7 @@ export const Estados = () => {
               <Ac modal={modalAc} closeModal={setModalAc} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalAm(true) }}
               src={imgAM}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -116,7 +116,7 @@ export const Estados = () => {
               <Am modal={modalAm} closeModal={setModalAm} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalAp(true) }}
               src={imgAP}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -124,7 +124,7 @@ export const Estados = () => {
               <Ap modal={modalAp} closeModal={setModalAp} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalPa(true) }}
               src={imgPA}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -132,7 +132,7 @@ export const Estados = () => {
               <Pa modal={modalPa} closeModal={setModalPa} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalRo(true) }}
               src={imgRO}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -140,7 +140,7 @@ export const Estados = () => {
               <Ro modal={modalRo} closeModal={setModalRo} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalRr(true) }}
               src={imgRR}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -148,7 +148,7 @@ export const Estados = () => {
               <Rr modal={modalRr} closeModal={setModalRr} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalTo(true) }}
               src={imgTO}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -161,7 +161,7 @@ export const Estados = () => {
       <Row style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "10px" }}>
         <h1 style={{ textAlign: "center", color: "orange" }}>NORDESTE<hr style={{marginBottom: "-10px"}}/></h1>
         <Row xs={3} md={4} className="g-4" style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalAl(true) }}
               src={imgAL}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -169,7 +169,7 @@ export const Estados = () => {
               <Al modal={modalAl} closeModal={setModalAl} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalBa(true) }}
               src={imgBA}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -177,7 +177,7 @@ export const Estados = () => {
               <Ba modal={modalBa} closeModal={setModalBa} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalCe(true) }}
               src={imgCE}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -185,7 +185,7 @@ export const Estados = () => {
               <Ce modal={modalCe} closeModal={setModalCe} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalMa(true) }}
               src={imgMA}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -193,7 +193,7 @@ export const Estados = () => {
               <Ma modal={modalMa} closeModal={setModalMa} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalPb(true) }}
               src={imgPB}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -201,7 +201,7 @@ export const Estados = () => {
               <Pb modal={modalPb} closeModal={setModalPb} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalPe(true) }}
               src={imgPE}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -209,7 +209,7 @@ export const Estados = () => {
               <Pe modal={modalPe} closeModal={setModalPe} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalPi(true) }}
               src={imgPI}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -217,7 +217,7 @@ export const Estados = () => {
               <Pi modal={modalPi} closeModal={setModalPi} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalRn(true) }}
               src={imgRN}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -225,7 +225,7 @@ export const Estados = () => {
               <Rn modal={modalRn} closeModal={setModalRn} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalSe(true) }}
               src={imgSE}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -238,7 +238,7 @@ export const Estados = () => {
       <Row style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "10px" }}>
         <h1 style={{ textAlign: "center", color: "yellowgreen" }}>CENTRO-OESTE<hr style={{marginBottom: "-10px"}}/></h1>
         <Row xs={3} md={4} className="g-4" style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalDf(true) }}
               src={imgDF}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -246,7 +246,7 @@ export const Estados = () => {
               <Df modal={modalDf} closeModal={setModalDf} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalGo(true) }}
               src={imgGO}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -254,7 +254,7 @@ export const Estados = () => {
               <Go modal={modalGo} closeModal={setModalGo} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalMs(true) }}
               src={imgMS}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -262,7 +262,7 @@ export const Estados = () => {
               <Ms modal={modalMs} closeModal={setModalMs} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalMt(true) }}
               src={imgMT}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -275,7 +275,7 @@ export const Estados = () => {
       <Row style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "10px" }}>
         <h1 style={{ textAlign: "center", color: "deeppink" }}>SUDESTE<hr style={{marginBottom: "-10px"}}/></h1>
         <Row xs={2} md={4} className="g-4" style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalEs(true) }}
               src={imgES}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -283,7 +283,7 @@ export const Estados = () => {
               <Es modal={modalEs} closeModal={setModalEs} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalMg(true) }}
               src={imgMG}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -291,7 +291,7 @@ export const Estados = () => {
               <Mg modal={modalMg} closeModal={setModalMg} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalRj(true) }}
               src={imgRJ}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -299,7 +299,7 @@ export const Estados = () => {
               <Rj modal={modalRj} closeModal={setModalRj} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalSp(true) }}
               src={imgSP}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -312,7 +312,7 @@ export const Estados = () => {
       <Row style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", margin: "10px"}}>
         <h1 style={{ textAlign: "center", color: "blueviolet" }}>SUL<hr style={{marginBottom: "-10px"}}/></h1>
         <Row xs={2} md={3} className="g-4" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalPr(true) }}
               src={imgPR}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -320,7 +320,7 @@ export const Estados = () => {
               <Pr modal={modalPr} closeModal={setModalPr} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalRs(true) }}
               src={imgRS}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
@@ -328,7 +328,7 @@ export const Estados = () => {
               <Rs modal={modalRs} closeModal={setModalRs} disable={true} />
             )}
           </Col>
-          <Col>
+          <Col style={{ display: "flex"}}>
             <Card.Img variant="top" onClick={() => { setModalSc(true) }}
               src={imgSC}
               style={{ height: "120px", width: "180px", borderRadius: "15px" }} />
