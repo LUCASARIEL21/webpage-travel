@@ -8,6 +8,11 @@ export const Anuncio1 = () => {
       justifyContent: "center",
       margin: "15px"
     }}>
+      <a href="//nossairt.net/4/5718337"
+        target="_blank"
+        style={{ display: "flex" }}>
+        anuncio
+      </a>
     </div>
   )
 }
