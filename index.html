@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/travel.svg" />
+    <meta name="monetag" content="aec0c72437b6f137c76fb255e1358b13">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viagens Br</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="text/javascript">
+      var uid = '453873';
+      var wid = '682039';
+      var pop_fback = 'up';
+
+      var pop_tag = document.createElement('script');
+      pop_tag.src='//cdn.popcash.net/show.js';
+      document.body.appendChild(pop_tag);
+
+      pop_tag.onerror = function() {
+        pop_tag = document.createElement('script');
+        pop_tag.src='//cdn2.popcash.net/show.js';
+        document.body.appendChild(pop_tag)
+      };
+   </script>
   </body>
 </html>
